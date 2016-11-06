@@ -34,7 +34,7 @@ def wiglePrint(username,password,netid):
 		print('[-] Lat:' + mapLat + ',Lon:' + mapLon)
 
 def printNets():
-	net = "SOFTWARE\Microsoft\WindowsNT\CurrentVersion\NetworkList\Signatures\Unmanaged"
+	net = 'SOFTWARE\\Microsoft\WindowsNT\\CurrentVersion\\NetworkList\\Signatures\\Unmanaged'
 	key = _winreg.OpenKey(_winreg.HKEY_LOCAL_MACHINE,net)
 	print('\n[*] Networks You have Joined.')
 	for i in range(100):
