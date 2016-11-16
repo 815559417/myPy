@@ -5,7 +5,7 @@ import socket
 import pygeoip
 import optparse
 
-gi = pygeoip.GeoIP('/opt/GeoIP/GeoIP.dat')
+gi = pygeoip.GeoIP('/home/wei/myPy/GeoLiteCity.dat')
 
 def retKMl(ip):
     rec = gi.record_by_name(ip)

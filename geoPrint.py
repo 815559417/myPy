@@ -34,7 +34,7 @@ def printPcap(pcap):
 
 def main():
 	parser = optparse.OptionParser('usage%prog -p <pcap file>')
-	parser.add_option('-p',dest='pcapFile',type='string'.help='specify pcap filename')
+	parser.add_option('-p',dest='pcapFile',type='string',help='specify pcap filename')
 	(options,args) = parser.parse_args()
 	if options.pcapFile == None:
 		print(parser,usage)
