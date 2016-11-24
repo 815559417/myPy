@@ -30,7 +30,7 @@ def printLinks(url):
 
 def main():
     parser = optparse.OptionParser('usage%prog -u <target url>')
-    parser.add_option('u',dest='tgtURL',type='string',help='specify target url')
+    parser.add_option('-u',dest='tgtURL',type='string',help='specify target url')
     (options,args) = parser.parse_args()
     url = options.tgtURL
     if url==None:
